@@ -1,0 +1,22 @@
+body {
+  padding-top: 5rem;
+}
+.navbar-brand{
+  margin-left: 48px;
+}
+.navbar-nav {
+  margin-left: 970px;
+}
+.footer {
+  position: absolute;
+  width: 100%;
+  height: 45px;
+}
+.copyright {
+  color: white;
+  margin-top: 0px;
+  margin-left: 550px;
+  font-size: 14px;
+  font-family: inherit;
+}
+
