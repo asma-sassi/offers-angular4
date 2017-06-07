@@ -12,10 +12,6 @@ export class ProductComponent implements OnInit {
   @Input() description:string;
   @Input() id:string;
 
-  // constructor(route: ActivatedRoute) {
-  //   this.id= route.snapshot.params['id'];
-  // }
-
   constructor(){}
 
   ngOnInit() {
