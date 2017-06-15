@@ -1,5 +1,4 @@
-import {Component, OnInit, Input} from '@angular/core';
-import {ActivatedRoute} from "@angular/router";
+import {Component, OnInit, Input} from "@angular/core";
 
 @Component({
   selector: 'product',
@@ -8,13 +7,16 @@ import {ActivatedRoute} from "@angular/router";
 })
 export class ProductComponent implements OnInit {
 
-  @Input() titre:string;
-  @Input() description:string;
-  @Input() id:string;
+  @Input() titre: string;
+  @Input() description: string;
+  @Input() id: string;
+  @Input() rating: string;
 
-  constructor(){}
+  constructor() {
+  }
 
   ngOnInit() {
+
   }
 
 }

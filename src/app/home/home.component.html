@@ -1,20 +1,50 @@
 <div class="home">
 
   <div class="album text-muted">
-  <div class="container">
+  <div class="container-fluid">
 
     <div class="row">
+      <app-slider style="margin: auto;"></app-slider>
+    </div>
 
+    <div class="row" style="background-color: snow;height: 250px;">
+       <app-preface></app-preface>
+    </div>
+
+    <div class="row" style="background-color: #ededed;padding: 40px 2px;">
+
+      <div class="advantages" align="center">
+        <h1>Pourquoi choisir Seating Plan ?</h1>
+        <span style="font-size:59%">Notre objectif est d'offrir à nos clients des produits et services de qualité supérieure.</span>
+      </div>
+      <app-advantages class="col-md-3"
+        style="width: 1345px;height: 329px;"
+      *ngFor="let ad of advantages"
+       [titre]="ad.titr"
+       [src]="ad.src"
+       [liste]="ad.liste"></app-advantages>
+
+    </div>
+
+    <div class="row" style="background-color: rgba(127, 149, 210, 0.41);padding: 40px 0px 65px;">
+
+      <div class="offres">
+        <h1>Nos Offres</h1>
+      </div>
       <product
-        class="col-md-4"
+        class="col-lg-3 col-md-4 col-sm-6"
         *ngFor="let p of products"
         [description]="p.desc"
         [id]="p.id"
-        [titre]="p.titre">
-        <video src="" ></video>
-
+        [titre]="p.titre"
+        [rating]="p.rating">
+        <!--<video src="" ></video>-->
       </product>
 
+    </div>
+
+    <div class="row" style="background-color: white;padding: 40px 0px;">
+      <app-contact></app-contact>
     </div>
 
   </div>

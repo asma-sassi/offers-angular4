@@ -1,5 +1,5 @@
 *{
-  box-sizing: border-box;
+  box-sizing: content-box;
 }
 .details{
   margin-top: 76px;

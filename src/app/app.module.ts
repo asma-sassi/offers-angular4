@@ -8,13 +8,25 @@ import { AppComponent } from './app.component';
 import { ProductComponent } from './product/product.component';
 import { DetailsComponent } from './details/details.component';
 import { HomeComponent } from './home/home.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { SliderComponent } from './slider/slider.component';
+import { PrefaceComponent } from './preface/preface.component';
+import { AdvantagesComponent } from './advantages/advantages.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductComponent,
     DetailsComponent,
-    HomeComponent
+    HomeComponent,
+    HeaderComponent,
+    FooterComponent,
+    SliderComponent,
+    PrefaceComponent,
+    AdvantagesComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -33,6 +45,10 @@ import { HomeComponent } from './home/home.component';
       {
         path: 'details/:id',
         component: DetailsComponent
+      },
+      {
+        path: 'advantage',
+        component: AdvantagesComponent
       }
     ])
   ],

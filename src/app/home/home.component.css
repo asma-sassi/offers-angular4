@@ -1,6 +1,5 @@
 .home{
-  margin-top: 76px;
-
+  margin-top: 56px;
 }
 .jumbotron {
   padding-top: 6rem;
@@ -8,22 +7,50 @@
   margin-bottom: 0;
   background-color: #fff;
 }
-
 .jumbotron p:last-child {
   margin-bottom: 0;
 }
-
 .jumbotron-heading {
   font-weight: 300;
 }
-
 .jumbotron .container {
   max-width: 40rem;
 }
-
 .album {
-  min-height: 31rem;
+  min-height: 170rem;
   padding-top: 0rem;
   padding-bottom: 0rem;
   background-color: #f7f7f7;
+}
+.offres{
+  width: 1345px;
+  height: 70px;
+  margin-bottom: 25px;
+}
+.offres h1{
+  text-align: center;
+  color: white;
+  font-size: 300%;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.advantages{
+  width: 1345px;
+  height: 70px;
+  margin-bottom: 35px;
+}
+.advantages h1{
+  font-size: 1.75rem;
+  color: silver;
+}
+.advantages h1::after{
+  content: "-";
+  display: block;
+  height: 4px;
+  overflow: hidden;
+  position: relative;
+  text-indent: -999em;
+  bottom: -8px;
+  width: 7%;
+  opacity: 0.5;
+  border-bottom: 2px solid;
 }

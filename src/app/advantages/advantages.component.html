@@ -1,0 +1,39 @@
+<div>
+
+  <div class="advantage" *ngIf="titre=='titre4';else elseBlock"
+       [ngStyle]="{'border-right': 'none'}">
+    <h1 class="left blue">{{titre}}</h1>
+    <div class="logo">
+      <img src="{{src}}" alt="" title="image1" class="left">
+    </div>
+    <ol class="advantage-list">
+      <li *ngFor="let l of liste">{{l}}</li>
+    </ol>
+    <div class="bottom">
+      <a class="btn btn-md btn-primary"
+         style="font-size:13px;border-color:white;color:white;border-radius:25px;margin-left:48px;padding:7px 20px;background:#a0eca3;">
+        View advantage
+      </a>
+    </div>
+  </div>
+
+  <div class="advantage" #elseBlock *ngIf="titre!=='titre4'"
+       [ngStyle]="{'padding': '20px 30px 20px 30px','border-right': 'solid 1px #9e9e9e','float': 'left','list-style': 'none'}">
+    <h1 class="left blue">{{titre}}</h1>
+    <div class="logo">
+      <img src="{{src}}" alt="" title="image1" class="left">
+    </div>
+    <ol class="advantage-list">
+      <li *ngFor="let l of liste">{{l}}</li>
+    </ol>
+    <div class="bottom">
+        <a class="btn btn-md btn-primary"
+           style="font-size:13px;border-color:white;color:white;border-radius:25px;margin-left:48px;padding:7px 20px;background:#a0eca3;">
+          View advantage
+        </a>
+    </div>
+  </div>
+
+
+
+</div>
