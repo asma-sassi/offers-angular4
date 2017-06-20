@@ -14,6 +14,7 @@ import { SliderComponent } from './slider/slider.component';
 import { PrefaceComponent } from './preface/preface.component';
 import { AdvantagesComponent } from './advantages/advantages.component';
 import { ContactComponent } from './contact/contact.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ContactComponent } from './contact/contact.component';
     SliderComponent,
     PrefaceComponent,
     AdvantagesComponent,
-    ContactComponent
+    ContactComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -49,6 +51,14 @@ import { ContactComponent } from './contact/contact.component';
       {
         path: 'advantage',
         component: AdvantagesComponent
+      },
+      {
+        path: 'contact',
+        component: ContactComponent
+      },
+      {
+        path: 'login',
+        component: LoginComponent
       }
     ])
   ],

@@ -1,15 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 declare var $:any;
 
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  selector: 'app-login',
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.css']
 })
-export class HeaderComponent implements OnInit {
+export class LoginComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
+
+
 
   showLoginForm = () => {
     $('#loginModal .registerBox').fadeOut('fast', function () {
@@ -28,7 +31,7 @@ export class HeaderComponent implements OnInit {
     setTimeout(function () {
       $('#loginModal').modal('show');
     }, 230);
-  };
+  }
 
 
   showRegisterForm = () => {

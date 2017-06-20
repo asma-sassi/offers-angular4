@@ -36,6 +36,6 @@ input {
   padding: 15px;
   font-weight: 100;
   font-size: 20px;
-  margin: 5px 0;
+  margin: 5px -15px;
   color: #3f3f3f;
 }
