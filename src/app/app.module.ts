@@ -15,6 +15,7 @@ import { PrefaceComponent } from './preface/preface.component';
 import { AdvantagesComponent } from './advantages/advantages.component';
 import { ContactComponent } from './contact/contact.component';
 import { LoginComponent } from './login/login.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { LoginComponent } from './login/login.component';
     PrefaceComponent,
     AdvantagesComponent,
     ContactComponent,
-    LoginComponent
+    LoginComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
@@ -55,6 +57,10 @@ import { LoginComponent } from './login/login.component';
       {
         path: 'contact',
         component: ContactComponent
+      },
+      {
+        path: 'about',
+        component: AboutComponent
       },
       {
         path: 'login',
