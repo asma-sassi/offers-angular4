@@ -16,6 +16,8 @@ import { AdvantagesComponent } from './advantages/advantages.component';
 import { ContactComponent } from './contact/contact.component';
 import { LoginComponent } from './login/login.component';
 import { AboutComponent } from './about/about.component';
+import { SignupComponent } from './signup/signup.component';
+import { ResetpwdComponent } from './resetpwd/resetpwd.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { AboutComponent } from './about/about.component';
     AdvantagesComponent,
     ContactComponent,
     LoginComponent,
-    AboutComponent
+    AboutComponent,
+    SignupComponent,
+    ResetpwdComponent
   ],
   imports: [
     BrowserModule,
@@ -65,6 +69,14 @@ import { AboutComponent } from './about/about.component';
       {
         path: 'login',
         component: LoginComponent
+      },
+      {
+        path: 'signup',
+        component: SignupComponent
+      },
+      {
+        path: 'resetpassword',
+        component: ResetpwdComponent
       }
     ])
   ],

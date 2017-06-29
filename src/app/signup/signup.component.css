@@ -3,10 +3,22 @@
   width: 1349px;
   height: 600px;
 }
+/*.box-form{*/
+  /*width: 530px;*/
+  /*height: 390px;*/
+  /*margin: 50px auto 50px;*/
+  /*padding: 10px;*/
+  /*border:1px solid #5cb3fd;*/
+  /*border-radius: 5px;*/
+/*}*/
+hr{
+  width: 97%;
+  margin-top: 0rem;
+}
 .box-form{
   position: relative;
-  width: 400px;
-  height: 330px;
+  width: 450px;
+  height: 360px;
   margin: 50px auto 50px;
   padding: 10px;
   /*border:1px solid #5cb3fd;*/
@@ -26,13 +38,8 @@ h3{
   font-family: "Calibri Light";
   font-weight: bold;
   color: #1d1e1f;
-  /*margin: 10px 124px 8px;*/
   margin-top: 10px;
   text-align: center;
-}
-hr{
-  width: 97%;
-  margin-top: 0rem;
 }
 input[type=text],input[type=email],input[type=password]{
   border:none;

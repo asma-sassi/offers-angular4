@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="box-form">
+
+    <h3>Réinitialiser le mot de passe</h3>
+    <hr>
+
+    <p style="margin: 25px 20px 0px;">Vous avez oublié votre mot de passe ? Veuillez entrer votre adresse email pour initier la réinitialisation.</p>
+
+    <form method="post" role="form">
+      <input type="hidden" name="token" value="ccc499d7ac94d8e059899d19e7eb159000f21c00">
+      <input type="hidden" name="action" value="reset">
+
+      <div class="form-group">
+        <!--<label for="inputEmail">Adresse email</label>-->
+        <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Adresse email" autofocus="">
+      </div>
+
+      <div class="form-group text-center">
+        <button type="submit" class="btn btn-primary">Envoyer</button>
+      </div>
+
+    </form>
+
+  </div>
+</div>

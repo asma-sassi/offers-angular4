@@ -1,6 +1,6 @@
 <div class="container">
   <div class="box-form">
-   <h3>Connexion</h3>
+    <h3>Inscription</h3>
     <hr>
     <form>
       <div class="form-group">
@@ -11,14 +11,12 @@
         <!--<label for="inputPassword">Mot de passe</label>-->
         <input type="password" name="password" class="form-control" id="inputPassword" placeholder="Mot de passe">
       </div>
-      <div class="checkbox">
-        <label>
-          <input type="checkbox" name="rememberme"> Rester connecté
-        </label>
+      <div class="form-group">
+        <!--<label for="inputPassword">Confirmer le mot de passe</label>-->
+        <input type="password" name="password" class="form-control" id="inputNewPassword" placeholder="Confirmer le mot de passe">
       </div>
       <div align="center">
-        <input id="login" type="submit" class="btn btn-primary" value="Connexion">
-        <a class="btn btn-default" [routerLink]="['/resetpassword']">Mot de passe oublié?</a>
+        <input id="login" type="submit" class="btn btn-primary" value="Inscription">
       </div>
     </form>
   </div>
