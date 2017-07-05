@@ -1,0 +1,29 @@
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators"
+        *ngFor="let s of slides"
+        [attr.data-slide-to]="s.id"></li>
+  </ol>
+  <div class="carousel-inner" role="listbox" >
+    <div class="carousel-item"
+         *ngFor="let s of slides"
+         [class.active]="s.id==0" [style.background]="getBackground(s.imageUrl)">
+
+      <!--<img class="d-block img-fluid" [attr.src]="s.imageUrl" [attr.alt]="s.alt">-->
+      <!-- Static Header -->
+      <div class="header-text hidden-xs center" *ngIf="s.id==0">
+        <div class="col-md-12 text-center">
+          <h2>
+            <span [innerHTML]="titleH2"></span>
+          </h2>
+          <br>
+          <h3>
+            <span [innerHTML]="titleH3"></span>
+          </h3>
+          <br>
+        </div>
+      </div>
+      <!-- /header-text -->
+     </div>
+  </div>
+</div>

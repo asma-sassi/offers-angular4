@@ -4,25 +4,27 @@
   <div class="container-fluid">
 
     <div class="row">
-      <app-slider style="margin: auto;"></app-slider>
+      <app-slider [slides]="slides" [titleH2]="titleH2" [titleH3]="titleH3"  style="margin: auto;"></app-slider>
     </div>
 
-    <div class="row" style="background-color: snow;height: 250px;">
+    <div class="row" style="background-color:aliceblue;height: 250px;">
        <app-preface></app-preface>
     </div>
 
-    <div class="row" style="background-color: #ededed;padding: 40px 2px;">
+    <div class="row" style="background-color: #ffffff;padding: 40px 0px;">
 
       <div class="advantages" align="center">
         <h1>Pourquoi choisir Seating Plan ?</h1>
         <span style="font-size:59%">Notre objectif est d'offrir à nos clients des produits et services de qualité supérieure.</span>
       </div>
-      <app-advantages class="col-md-3"
-        style="width: 1345px;height: 329px;"
-      *ngFor="let ad of advantages"
+      <app-advantages class="col-md-3 col-md-offset-1 fadeInDown app-ad"
+       *ngFor="let ad of advantages"
        [titre]="ad.titr"
        [src]="ad.src"
-       [liste]="ad.liste"></app-advantages>
+       [color]="ad.color"
+       [liste]="ad.liste"
+       [button]="ad.button">
+      </app-advantages>
 
     </div>
 
@@ -41,10 +43,6 @@
         <!--<video src="" ></video>-->
       </product>
 
-    </div>
-
-    <div class="row" style="background-color: white;padding: 40px 0px;">
-      <app-contact></app-contact>
     </div>
 
   </div>

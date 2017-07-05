@@ -1,0 +1,22 @@
+<div>
+
+  <div class="advantage">
+       <!--[ngStyle]="{'padding': '20px 30px 20px 30px','border-right': 'none','float': 'left','list-style': 'none'}">-->
+    <h1 class="left blue">{{titre}}</h1>
+    <div class="logo" [ngStyle]="{'background-image':'url('+src+')','background-repeat':'no-repeat','background-position':'center',
+     'background-size': 'contain','background-color':color}">
+      <!--<img src="{{src}}" alt="" title="image1" class="left">-->
+    </div>
+    <ol class="advantage-list ">
+      <li class="list-group-item" *ngFor="let l of liste">{{l}}</li>
+    </ol>
+    <div class="bottom">
+        <a class="btn btn-md btn-primary view-advantage">
+          {{button}}
+        </a>
+    </div>
+  </div>
+
+
+
+</div>

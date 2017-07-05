@@ -1,6 +1,7 @@
 .contact{
   width: 1349px;
   min-height: 540px;
+  /*min-height: 100%;*/
 }
 h1{
   text-align: center;

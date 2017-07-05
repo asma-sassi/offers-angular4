@@ -5,14 +5,14 @@ import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { ProductComponent } from './product/product.component';
-import { DetailsComponent } from './details/details.component';
+import { ProductComponent } from './home/product/product.component';
+import { DetailsComponent } from './home/details/details.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { SliderComponent } from './slider/slider.component';
-import { PrefaceComponent } from './preface/preface.component';
-import { AdvantagesComponent } from './advantages/advantages.component';
+import { SliderComponent } from './home/slider/slider.component';
+import { PrefaceComponent } from './home/preface/preface.component';
+import { AdvantagesComponent } from './home/advantages/advantages.component';
 import { ContactComponent } from './contact/contact.component';
 import { LoginComponent } from './login/login.component';
 import { AboutComponent } from './about/about.component';
@@ -41,22 +41,25 @@ import { ResetpwdComponent } from './resetpwd/resetpwd.component';
     FormsModule,
     HttpModule,
     RouterModule.forRoot([
+
       {
         path: '',
         pathMatch: 'full',
-        component: HomeComponent
-      },
-      {
-        path: 'product',
-        component: ProductComponent
-      },
-      {
-        path: 'details/:id',
-        component: DetailsComponent
-      },
-      {
-        path: 'advantage',
-        component: AdvantagesComponent
+        component: HomeComponent,
+        children: [
+                    {
+                      path: 'product',
+                      component: ProductComponent
+                    },
+                    {
+                      path: 'details/:id',
+                      component: DetailsComponent,
+                    },
+                    {
+                      path: 'advantage',
+                      component: AdvantagesComponent,
+                    }
+                  ]
       },
       {
         path: 'contact',

@@ -19,7 +19,6 @@ export class HomeComponent implements OnInit {
     titre:"titre1",
     desc:"desc1",
     rating: "bronze"
-
   },{
     id:"1",
     titre:"titre2",
@@ -39,24 +38,62 @@ export class HomeComponent implements OnInit {
 
   advantages = [{
     id:0,
-    titr:"titre1",
+    titr:"Titre 1",
     src:"/assets/img/icon-tv.png",
-    liste:["test1","test2","test3"]
+    color:"#4dd8d8",
+    liste:["Hanc regionem",
+      "Hoc inmaturo interitu",
+      "Principium autem",
+      "Restabat ut Caesar"],
+    button:"View this advantage"
   },{
     id:1,
-    titr:"titre2",
+    titr:"Titre 2",
     src:"/assets/img/icon-mobile.png",
-    liste:["test1","test2","test3"]
+    color:"#ffe7b1",
+    liste:["Hanc regionem",
+      "Hoc inmaturo interitu",
+      "Principium autem",
+      "Restabat ut Caesar"],
+    button:"View this advantage"
   },{
     id:2,
-    titr:"titre3",
-    src:"/assets/img/icon-pc.png",
-    liste:["test1","test2","test3"]
+    titr:"Titre 3",
+    src:"/assets/img/icon-tv.png",
+    color:"#a7ec91",
+    liste:["Hanc regionem",
+      "Hoc inmaturo interitu",
+      "Principium autem",
+      "Restabat ut Caesar"],
+    button:"View this advantage"
   },{
     id:3,
-    titr:"titre4",
-    src:"/assets/img/icon-tv.png",
-    liste:["test1","test2","test3"]
+    titr:"Titre 4",
+    src:"/assets/img/icon-mobile.png",
+    color:"#dea6e2",
+    liste:["Hanc regionem",
+      "Hoc inmaturo interitu",
+      "Principium autem",
+      "Restabat ut Caesar"],
+    button:"View this advantage"
   }];
+
+  slides = [{
+    id:0,
+    imageUrl:"/assets/img/la.jpg",
+    alt:"First slide"
+  },{
+    id:1,
+    imageUrl:"/assets/img/ny.jpg",
+    alt:"Second slide"
+  },{
+    id:2,
+    imageUrl:"/assets/img/chicago.jpg",
+    alt:"Third slide"
+  }];
+
+  titleH2 = "Welcome to <strong>Seating Plan</strong>";
+
+  titleH3 = "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>";
 
 }
