@@ -11,6 +11,7 @@ export class ProductComponent implements OnInit {
   @Input() description: string;
   @Input() id: string;
   @Input() rating: string;
+  @Input() imgUrl: string;
 
   constructor() {
   }

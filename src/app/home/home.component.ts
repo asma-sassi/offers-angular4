@@ -16,23 +16,39 @@ export class HomeComponent implements OnInit {
 
   products = [{
     id:"0",
-    titre:"titre1",
-    desc:"desc1",
+    titre:"Titre 1",
+    imgUrl:"/assets/img/OilPaintingOrange.jpg",
+    desc:"Sed si ille hac tam eximia fortuna propter utilitatem" +
+    " rei publicae frui non properat, ut omnia illa conficiat," +
+    " quid ego, senator, facere debeo, quem, etiamsi ille aliud " +
+    "vellet, rei publicae consulere oporteret",
     rating: "bronze"
   },{
     id:"1",
-    titre:"titre2",
-    desc:"desc2",
+    titre:"Titre 2",
+    imgUrl:"/assets/img/OilPaintingGreen.jpg",
+    desc:"Sed si ille hac tam eximia fortuna propter utilitatem" +
+    " rei publicae frui non properat, ut omnia illa conficiat," +
+    " quid ego, senator, facere debeo, quem, etiamsi ille aliud " +
+    "vellet, rei publicae consulere oporteret",
     rating: "silver"
   },{
     id:"2",
-    titre:"titre3",
-    desc:"desc3",
+    titre:"Titre 3",
+    imgUrl:"/assets/img/OilPaintingRed.jpg",
+    desc:"Sed si ille hac tam eximia fortuna propter utilitatem" +
+    " rei publicae frui non properat, ut omnia illa conficiat," +
+    " quid ego, senator, facere debeo, quem, etiamsi ille aliud " +
+    "vellet, rei publicae consulere oporteret",
     rating:"gold"
   },{
     id:"3",
-    titre:"titre4",
-    desc:"desc4",
+    titre:"Titre 4",
+    imgUrl:"/assets/img/OilPaintingBlue.jpg",
+    desc:"Sed si ille hac tam eximia fortuna propter utilitatem" +
+    " rei publicae frui non properat, ut omnia illa conficiat," +
+    " quid ego, senator, facere debeo, quem, etiamsi ille aliud " +
+    "vellet, rei publicae consulere oporteret",
     rating:"silver"
   }];
 

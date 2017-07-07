@@ -7,17 +7,19 @@
       <app-slider [slides]="slides" [titleH2]="titleH2" [titleH3]="titleH3"  style="margin: auto;"></app-slider>
     </div>
 
-    <div class="row" style="background-color:aliceblue;height: 250px;">
+    <div class="row" style="background-color:#f5ecf3;height: 250px;">
        <app-preface></app-preface>
     </div>
 
-    <div class="row" style="background-color: #ffffff;padding: 40px 0px;">
+    <div class="row" style="background-color:#ffffff;padding: 40px 0px;">
 
       <div class="advantages" align="center">
         <h1>Pourquoi choisir Seating Plan ?</h1>
         <span style="font-size:59%">Notre objectif est d'offrir à nos clients des produits et services de qualité supérieure.</span>
       </div>
-      <app-advantages class="col-md-3 col-md-offset-1 fadeInDown app-ad"
+      <app-advantages
+        show-visible
+        class="col-md-3 col-md-offset-1 fadeInDown app-ad"
        *ngFor="let ad of advantages"
        [titre]="ad.titr"
        [src]="ad.src"
@@ -28,17 +30,19 @@
 
     </div>
 
-    <div class="row" style="background-color: rgba(127, 149, 210, 0.41);padding: 40px 0px 65px;">
+    <div class="row" style="background-color:#f3fff6;padding: 40px 0px 65px;">
 
       <div class="offres">
         <h1>Nos Offres</h1>
       </div>
+
       <product
         class="col-lg-3 col-md-4 col-sm-6"
         *ngFor="let p of products"
-        [description]="p.desc"
         [id]="p.id"
         [titre]="p.titre"
+        [imgUrl]="p.imgUrl"
+        [description]="p.desc"
         [rating]="p.rating">
         <!--<video src="" ></video>-->
       </product>

@@ -18,6 +18,7 @@ import { LoginComponent } from './login/login.component';
 import { AboutComponent } from './about/about.component';
 import { SignupComponent } from './signup/signup.component';
 import { ResetpwdComponent } from './resetpwd/resetpwd.component';
+import { ShowVisibleDirective } from './show-visible.directive';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { ResetpwdComponent } from './resetpwd/resetpwd.component';
     LoginComponent,
     AboutComponent,
     SignupComponent,
-    ResetpwdComponent
+    ResetpwdComponent,
+    ShowVisibleDirective
   ],
   imports: [
     BrowserModule,
