@@ -1,34 +1,75 @@
 <!--<footer class="navbar navbar-toggleable-md navbar-inverse bg-inverse footer">-->
   <footer class="footer navbar">
 
-  <div class="footer-top-layout">
-    <div class="container">
-      <div class="row">
-          <div class="col">
-            <div class="col offset-md-4"></div>
-            <div class="col offset-md-4">
-              <a [routerLink]="['contact']">Contact</a>
-            </div>
-          </div>
-          <div class="col">
-            <div class="col offset-md-4"></div>
-            <div class="col offset-md-4">
-             <a [routerLink]="['login']">Connexion</a>
-            </div>
-          </div>
-          <div class="col">
-            <div class="col offset-md-4"></div>
-            <div class="col offset-md-4">
-             <a [routerLink]="['signup']">Inscription</a>
-            </div>
-          </div>
-      </div>
-    </div>
-  </div>
-
 <div class="footer-bottom-layout">
-  <div class="copyright mx-auto">
-    &copy; All rights reserved 2017
+  <div class="container">
+
+    <div class="row above">
+
+      <div class="inside">
+        <h2 class="text-center">Join US!</h2>
+        <div class="buttons row">
+          <div class="col"></div>
+          <div class="col ">
+            <input style="border-radius: 6.25em;background: #f7a368;color: wheat;" class="btn btn-lg btn-block" type="button" value="Connexion">
+          </div>
+          <div class="col">
+          <input style="border-radius: 6.25em;background: #f7a368;color: wheat;" class="btn btn-lg btn-block" type="button" value="Inscription">
+          </div>
+          <div class="col"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row below">
+
+      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+        <div class="col">
+              <div class="logo">
+              </div>
+              <div class="copyright">
+                &copy; KimEvents consulting 2017
+              </div>
+        </div>
+      </div>
+
+      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+        <div class="col">
+        <div class="title-info">
+         Contact Information
+        </div>
+          <div class="info">
+            <div class="paragraphe">
+              20 , AV Farhat Hached 2080 Ariana, Tunisie<br>
+              +216 71 703 000, <span class="text-secondary">contact@kimevents.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+        <div class="col">
+          <div class="title-connect">
+            GET IN TOUCH
+          </div>
+          <div class="contact">
+            <a [routerLink]="['contact']">Contact Us</a>
+          </div>
+          <div class="social-media">
+            <ul class="list-inline">
+              <li><a href="#."><i class="fa fa-fw fa-facebook"></i></a></li>
+              <li><a href="#."><i class="fa fa-fw fa-twitter"></i></a></li>
+              <li><a href="#."><i class="fa fa-fw fa fa-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
   </div>
 </div>
 
