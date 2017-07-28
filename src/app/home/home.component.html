@@ -21,6 +21,7 @@
         show-visible
         class="col-lg-3 col-md-offset-1 fadeInDown app-ad"
        *ngFor="let ad of advantages"
+       [id]="ad.id"
        [titre]="ad.titr"
        [src]="ad.src"
        [color]="ad.color"

@@ -19,6 +19,7 @@ import { AboutComponent } from './about/about.component';
 import { SignupComponent } from './signup/signup.component';
 import { ResetpwdComponent } from './resetpwd/resetpwd.component';
 import { ShowVisibleDirective } from './show-visible.directive';
+import { AdvDetailsComponent } from './home/adv-details/adv-details.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { ShowVisibleDirective } from './show-visible.directive';
     AboutComponent,
     SignupComponent,
     ResetpwdComponent,
-    ShowVisibleDirective
+    ShowVisibleDirective,
+    AdvDetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -54,14 +56,18 @@ import { ShowVisibleDirective } from './show-visible.directive';
                       component: ProductComponent
                     },
                     {
-                      path: 'details/:id',
-                      component: DetailsComponent,
-                    },
-                    {
                       path: 'advantage',
                       component: AdvantagesComponent,
                     }
                   ]
+      },
+      {
+        path: 'details/:id',
+        component: DetailsComponent,
+      },
+      {
+        path: 'advDetails/:id',
+        component: AdvDetailsComponent,
       },
       {
         path: 'contact',

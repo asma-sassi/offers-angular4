@@ -32,58 +32,9 @@
    color: white;
    text-decoration: none;
 }
- .col{
-   margin-top: 20px;
- }
- .logo{
-   height: 33px;
-   width: 95px;
-   margin: 10px auto 15px;
-   background-image: url(../../assets/img/logokim.png);
-   background-repeat: no-repeat;
-   background-position:center;
- }
-.copyright {
-  color: white;
-  font-size: 12px;
-  text-align: center;
-}
-.title-info{
-  font-size: 18px;
-  font-family: inherit;
-  color: wheat;
-}
-.info{
-  margin-top: 15px;
-}
-.paragraphe{
-  margin-top: 10px;
-  color: white;
-  font-size: 14px;
-  font-family: initial;
-}
-.paragraphe span{
-  color: #f7a368;
-}
-.title-connect{
-  color: wheat;
-}
-.list-inline{
-  list-style: none;
-  padding: 10px 88px;
-}
-ul{
-  display: inline-block;
-  float: none;
-}
-li{
-  /*margin-left: 20px;*/
-  float: left;
-  text-align: center;
-}
 .above{
   background-color: #3c4046;
-  width: 100vw;
+  width: 99.4vw;
   position: relative;
   margin-left: -50vw;
   margin-top: -20px;
@@ -103,6 +54,57 @@ li{
   margin-top: 30px;
   margin-bottom: 2px;
 }
+.logo{
+   height: 90px;
+   width: 90px;
+   margin: 10px auto 15px;
+   background-image: url(../../assets/img/logokim.png);
+   background-repeat: no-repeat;
+   background-position:center;
+   background-size: contain;
+ }
+.copyright {
+  color: white;
+  font-size: 12px;
+  text-align: center;
+}
+.title{
+  font-size: 18px;
+  font-family: inherit;
+  color: wheat;
+  margin-top: 27px;
+}
+.info{
+  margin-top: 15px;
+}
+.paragraphe{
+  margin-top: 25px;
+  color: white;
+  font-size: 14px;
+}
+.paragraphe span{
+  color: #f7a368;
+}
+.text-secondary{
+  margin-top: 5px;
+}
+.contact{
+  margin-top: 10px;
+}
+.list-inline{
+  list-style: none;
+  padding: 10px 88px;
+}
+ul{
+  display: inline-block;
+  float: none;
+}
+li{
+  margin-left: 5px;
+  float: left;
+  text-align: center;
+}
+
 
 
 

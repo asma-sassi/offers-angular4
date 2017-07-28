@@ -12,7 +12,7 @@ export class DetailsComponent implements OnInit{
 
   constructor(private router:Router,route: ActivatedRoute) {
     this.id = route.snapshot.params['id'];
-    if(["0","1","2"].indexOf(this.id)== -1)
+    if(["0","1","2","3"].indexOf(this.id)== -1)
       this.router.navigate(['/']);
   }
 
