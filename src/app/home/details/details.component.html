@@ -1,34 +1,14 @@
-<!--<div class="details">-->
-
-<!--<form action="" class="container"-->
-   <!--#userForm = "ngForm"-->
-  <!--(ngSubmit) = "onSubmit(userForm.value)">-->
-  <!--<h1>{{id}}</h1>-->
-  <!--<input type="text" name="firstname" placeholder="firstname" ngModel><br>-->
-  <!--<input type="text" name="lastname" placeholder="lastname" ngModel><br>-->
-  <!--<input type="submit" value="submit">-->
-
-<!--</form>-->
-
-<!--</div>-->
-
 <div class="page">
   <div class="row">
-      <div class="image col-md-4" [ngStyle]="{'background-image':'url(/assets/img/OilPaintingRed.jpg)'}">
+      <div class="image col-md-4" [ngStyle]="{'background-image':'url('+product?.imgUrl+')'}">
       </div>
       <div class="text col-md-6">
-        <h2>Titre</h2>
+        <h2>{{product?.titre}}</h2>
         <div class="span">
-          test
+          <p>Rating: {{product?.rating}}</p>
         </div>
         <div class="description">
-          <p>Coactique aliquotiens nostri pedites ad eos persequendos scandere
-            clivos sublimes etiam si lapsantibus plantis fruticeta prensando
-            vel dumos ad vertices venerint summos, inter arta tamen et invia nullas
-            acies explicare permissi nec firmare nisu valido gressus: hoste discursatore
-            rupium abscisa volvente, ruinis ponderum inmanium consternuntur, aut ex
-            necessitate ultima fortiter dimicante, superati periculose per prona discedunt.
-          </p>
+          <p>{{product?.desc}}</p>
         </div>
         <button type="button" class="btn btn-info">Select this offer</button>
       </div>

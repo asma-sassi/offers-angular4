@@ -9,7 +9,7 @@ export class ProductComponent implements OnInit {
 
   @Input() titre: string;
   @Input() description: string;
-  @Input() id: string;
+  @Input() id:number=0;
   @Input() rating: string;
   @Input() imgUrl: string;
 

@@ -20,6 +20,7 @@ import { SignupComponent } from './signup/signup.component';
 import { ResetpwdComponent } from './resetpwd/resetpwd.component';
 import { ShowVisibleDirective } from './show-visible.directive';
 import { AdvDetailsComponent } from './home/adv-details/adv-details.component';
+import {HomeService} from "./home/home.service";
 
 @NgModule({
   declarations: [
@@ -91,7 +92,7 @@ import { AdvDetailsComponent } from './home/adv-details/adv-details.component';
       }
     ])
   ],
-  providers: [],
+  providers: [HomeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

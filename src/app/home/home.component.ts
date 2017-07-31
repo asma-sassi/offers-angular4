@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {HomeService} from "./home.service";
 
 @Component({
   selector: 'home',
@@ -7,15 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private service:HomeService) { }
 
   ngOnInit() {
+    this.service.getAdventages()
+      .subscribe((data)=>{this.advantages = data;console.log(data)})
   }
 
   title = 'home works!';
 
   products = [{
-    id:"0",
+    id:0,
     titre:"Titre 1",
     imgUrl:"/assets/img/OilPaintingOrange.jpg",
     desc:"Sed si ille hac tam eximia fortuna propter utilitatem" +
@@ -24,7 +27,7 @@ export class HomeComponent implements OnInit {
     "vellet, rei publicae consulere oporteret",
     rating: "bronze"
   },{
-    id:"1",
+    id:1,
     titre:"Titre 2",
     imgUrl:"/assets/img/OilPaintingGreen.jpg",
     desc:"Sed si ille hac tam eximia fortuna propter utilitatem" +
@@ -33,7 +36,7 @@ export class HomeComponent implements OnInit {
     "vellet, rei publicae consulere oporteret",
     rating: "silver"
   },{
-    id:"2",
+    id:2,
     titre:"Titre 3",
     imgUrl:"/assets/img/OilPaintingRed.jpg",
     desc:"Sed si ille hac tam eximia fortuna propter utilitatem" +
@@ -42,7 +45,7 @@ export class HomeComponent implements OnInit {
     "vellet, rei publicae consulere oporteret",
     rating:"gold"
   },{
-    id:"3",
+    id:3,
     titre:"Titre 4",
     imgUrl:"/assets/img/OilPaintingBlue.jpg",
     desc:"Sed si ille hac tam eximia fortuna propter utilitatem" +
